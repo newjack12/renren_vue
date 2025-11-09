@@ -42,7 +42,7 @@ To serve the built project, you can use a simple HTTP server:
 npx http-server build
 ```
 
-Then open your browser at `http://localhost:8080` (the port may vary).
+Then open your browser at `http://localhost:8080` .
 
 > Note: Some features may not work without the back-end server running.
 

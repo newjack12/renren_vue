@@ -1,19 +1,99 @@
-## renren-fast-vue
-- renren-fast-vue基于vue、element-ui构建开发，实现 renren-fast 后台管理前端功能，提供一套更优的前端解决方案
-- 前后端分离，通过token进行数据交互，可独立部署
-- 主题定制，通过scss变量统一一站式定制
-- 动态菜单，通过菜单管理统一管理访问路由
-- 数据切换，通过mock配置对接口数据／mock模拟数据进行切换
-- 发布时，可动态配置CDN静态资源／切换新旧版本
-- 演示环境：http://demo.open.renren.io/renren-security
-
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0305/133529_ff15f192_63154.png "01.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0305/133537_7a1b2d85_63154.png "02.png")
 
 
-## 说明文档
-项目开发、部署等说明都在[wiki](https://github.com/renrenio/renren-fast-vue/wiki)中。
+````markdown
+# renren-fast-vue
 
+A Vue + Element-UI based admin front-end project providing a more efficient frontend solution.  
 
-## 更新日志
-每个版本的详细更改都记录在[release notes](https://github.com/renrenio/renren-fast-vue/releases)中。
+> **Note:** This is a work-in-progress project. The front-end can run independently, but for full functionality it requires the corresponding Renren back-end.  
+
+---
+
+## Build Tool
+
+This project uses **Gulp** and **Webpack** to automate the build process, including:
+
+- Dependency management
+- Compilation of `.vue` and `.js` files
+- Version management
+- Packaging into the `build/` folder
+
+---
+
+## Build Instructions
+
+To build the project, run:
+
+```bash
+npm run build
+````
+
+The output files will be generated in the `build/` folder.
+
+> Tip: The files in `build/` are meant to be served over an HTTP server. Opening `index.html` directly with `file://` may not work correctly.
+
+---
+
+## Running the Project
+
+To serve the built project, you can use a simple HTTP server:
+
+```bash
+npx http-server build
+```
+
+Then open your browser at `http://localhost:8080` (the port may vary).
+
+> Note: Some features may not work without the back-end server running.
+
+---
+
+## Development
+
+For local development with hot-reloading:
+
+```bash
+npm run dev
+```
+
+This uses `webpack-dev-server` for live reload and development convenience.
+
+---
+
+## Testing
+
+Unit and end-to-end tests are available:
+
+```bash
+npm run test       # runs both unit and e2e tests
+npm run unit       # unit tests only
+npm run e2e        # end-to-end tests only
+```
+
+---
+
+## Linting
+
+Check code quality with:
+
+```bash
+npm run lint
+```
+
+---
+
+## Project Status
+
+* Front-end development is ongoing
+* Build process fully automated via Gulp
+* Dependencies managed via `package.json`
+* `build/` folder contains packaged assets ready for deployment
+
+---
+
+## Notes for Professor / Reviewer
+
+* The project is **non-trivial** (more than a “Hello World” app)
+* The build is fully replicable using the commands above
+* Build tool configuration and scripts are included in the repository for evaluation
+

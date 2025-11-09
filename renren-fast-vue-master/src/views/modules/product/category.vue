@@ -193,6 +193,8 @@ export default {
           });
         } else {
           this.updateNodes.push({ catId: siblings[i].data.catId, sort: i });
+       
+        
         }
       }
 

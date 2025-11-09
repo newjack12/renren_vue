@@ -91,9 +91,4 @@ npm run lint
 
 ---
 
-## Notes for Professor / Reviewer
-
-* The project is **non-trivial** (more than a “Hello World” app)
-* The build is fully replicable using the commands above
-* Build tool configuration and scripts are included in the repository for evaluation
 
